@@ -3,7 +3,7 @@ from Api import Poll, Talk, channel
 from lib.curve.ttypes import *
 
 def def_callback(str):
-    print("\nTyfe's admin login URL: "+str+"\n")
+    print(str)
 
 class LINE:
 
@@ -64,9 +64,6 @@ class LINE:
 
   def updateSettings(self, settingObject):
     return self.Talk.client.updateSettings(0, settingObject)
-
-  def updateDisplayPicture(self, hash_id):
-    return self.Talk.client.updateProfileAttribute(0, 8, hash_id)
 
 
   """Operation"""
@@ -314,7 +311,7 @@ class LINE:
 
       prof = self.getProfile()
 
-      print("TREEBOT")
+      print("Yoshino Bot")
       print("mid -> " + prof.mid)
       print("name -> " + prof.displayName)
       print("authToken -> " + self.authToken)
