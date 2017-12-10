@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
-import treetc
-from treetc.lib.curve.ttypes import *
+import timetc
+from timetc.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,base64
 
-cl = treetc.LINE()
+cl = timetc.LINE()
 print u"login start"
 cl.login(qr=True)
 cl.loginResult()
